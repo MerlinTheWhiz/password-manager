@@ -7,6 +7,7 @@ def main():
         length = input("Min of 8 characters: ").strip()
         if length.isdigit():
             length = int(length)
+            # Characters should be greater than or equals to 8
             if length >= 8:
                 print("Generated Password:", password_generator(length))
                 break
